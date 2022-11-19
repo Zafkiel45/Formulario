@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, helvetica, sans-serif;
+}
+
+form {
+    width: fit-content;
+    background-color: rgb(86, 131, 202);
+    padding: 2em;
+    margin: auto;
+    border: 2px solid rgb(26, 58, 109);
+    accent-color: rgb(27, 122, 160);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+}
+
+.text-area {
+    margin: 5% 0%;
+}
+
+.idade {
+    margin: 2% 0%;
+}
