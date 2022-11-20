@@ -5,28 +5,19 @@
     font-family: arial, helvetica, sans-serif;
 }
 
-form {
-    width: fit-content;
-    background-color: rgb(86, 131, 202);
-    padding: 2em;
-    margin: auto;
-    border: 2px solid rgb(26, 58, 109);
-    accent-color: rgb(27, 122, 160);
-    border-radius: 20px;
-    margin-top: 50px;
+body {
+    background-image: linear-gradient(80deg, #E08AEB, #D472B8, #AE72D4, #AB85F6);
 }
 
-.user {
+.menu {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-    color: white;
+    list-style: none;
+    padding: 1.25em;
+    gap: 30px;
+    background-color: white;
+    color: grey;
 }
 
-.text-area {
-    margin: 5% 0%;
-}
-
-.idade {
-    margin: 2% 0%;
+.logo {
+    flex-grow: 1;
 }
