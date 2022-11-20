@@ -10,12 +10,12 @@ body {
 }
 
 .menu {
-    display: flex;
-    list-style: none;
-    padding: 1.25em;
     gap: 30px;
-    background-color: white;
     color: grey;
+    display: flex;
+    padding: 1.25em;
+    list-style: none;
+    background-color: white;
 }
 
 .logo {
@@ -24,40 +24,40 @@ body {
 
 .seção {
     display: flex; 
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     box-shadow: 2px 2px 3px black;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
     margin: 5%;
+    display: flex;
     padding: 2.50em;
-    border-radius: 1.25em;
     min-width: 400px;
     max-width: 600px; 
+    border-radius: 1.25em;
+    flex-direction: column;
+    background-color: #fff;
 }
 
 .user {
+    gap: 0.60em;
     display: flex;
     flex-direction: column;
-    gap: 0.60em;
 }
 
 #nome {
-    height: 40px;
-    background: rgb(219, 219, 219);
-    border-radius: 20px;
     border: none;
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(219, 219, 219);
 }
 
 #email {
     height: 40px;
-    background: rgb(219, 219, 219);
-    border-radius: 20px;
     border: none;
+    border-radius: 20px;
+    background: rgb(219, 219, 219);
 }
 
 .sobre {
@@ -66,9 +66,9 @@ body {
 }
 
 #sobre {
-    background: rgb(219, 219, 219);
-    border-radius: 20px;
     border: none;
+    border-radius: 20px;
+    background: rgb(219, 219, 219);
 }
 
 #other {
@@ -103,27 +103,27 @@ a:visited {
 #button {
     width: 80%;
     height: 3em;
-    background-color: rgb(229, 99, 254);
     border: none;
-    border-radius: 1.25em;
     color: white;
     font-size: 1.20em;
+    border-radius: 1.25em;
+    background-color: rgb(229, 99, 254);
 }
 
 .info {
-    background-color: rgba(192, 249, 255, 0.728);
     height: 100vh;
+    background-color: rgba(192, 249, 255, 0.728);
 }
 
 .info-conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: relative;
     top: 100px;
     height: 70%;
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titulo-1 {
@@ -135,8 +135,8 @@ a:visited {
 }
 
 input::placeholder {
-    color: rgb(88, 88, 88);
     padding-left: 20px;
+    color: rgb(88, 88, 88);
 }
 
 
