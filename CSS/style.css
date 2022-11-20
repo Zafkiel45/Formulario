@@ -123,6 +123,7 @@ a:visited {
     color: white;
     position: relative;
     top: 100px;
+    height: 70%;
 }
 
 .titulo-1 {
@@ -131,4 +132,37 @@ a:visited {
 .texto {
     width: 60%;
     font-size: 2em;
+}
+
+input::placeholder {
+    color: rgb(88, 88, 88);
+    padding-left: 20px;
+}
+
+
+@media(max-width: 768px){
+    .texto {
+        font-size: 1em;
+    }
+
+    .titulo-1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 425px){
+    .seção {
+        flex-direction: column;
+    }
+
+    .info {
+        order: -1;
+    }
+}
+
+@media (max-width: 400px){
+    .form {
+        min-width: 200px;
+        max-width: 400px;
+    }
 }
