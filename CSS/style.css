@@ -21,3 +21,114 @@ body {
 .logo {
     flex-grow: 1;
 }
+
+.seção {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 3px black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 5%;
+    padding: 2.50em;
+    border-radius: 1.25em;
+    min-width: 400px;
+    max-width: 600px; 
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.60em;
+}
+
+#nome {
+    height: 40px;
+    background: rgb(219, 219, 219);
+    border-radius: 20px;
+    border: none;
+}
+
+#email {
+    height: 40px;
+    background: rgb(219, 219, 219);
+    border-radius: 20px;
+    border: none;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre {
+    background: rgb(219, 219, 219);
+    border-radius: 20px;
+    border: none;
+}
+
+#other {
+    margin: 4% 0%;
+}
+
+.titulo-2 {
+    margin: 2%;
+}
+
+.termo {
+    margin: 4% 0%;
+    font-style: italic;
+}
+#checked {
+    accent-color: purple;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+.submit {
+    text-align: center;
+}
+
+#button {
+    width: 80%;
+    height: 3em;
+    background-color: rgb(229, 99, 254);
+    border: none;
+    border-radius: 1.25em;
+    color: white;
+    font-size: 1.20em;
+}
+
+.info {
+    background-color: rgba(192, 249, 255, 0.728);
+    height: 100vh;
+}
+
+.info-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: 100px;
+}
+
+.titulo-1 {
+    font-size: 5em;
+}
+.texto {
+    width: 60%;
+    font-size: 2em;
+}
