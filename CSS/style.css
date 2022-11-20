@@ -40,6 +40,7 @@ body {
     background-color: #fff;
 }
 
+
 .user {
     gap: 0.60em;
     display: flex;
@@ -143,6 +144,11 @@ input::placeholder {
 @media(max-width: 768px){
     .texto {
         font-size: 1em;
+    }
+
+    label {
+        position: relative;
+        left: 10px;
     }
 
     .titulo-1 {
