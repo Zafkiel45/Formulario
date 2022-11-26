@@ -120,9 +120,10 @@ a:visited {
     background-color: rgba(192, 249, 255, 0.728);
 }
 
+textarea,
 label,
 input {
-    padding: 2%;
+    padding: 3.5%;
 }
 
 .info-conteudo {
