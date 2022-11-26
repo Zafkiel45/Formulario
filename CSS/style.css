@@ -120,6 +120,11 @@ a:visited {
     background-color: rgba(192, 249, 255, 0.728);
 }
 
+label,
+input {
+    padding: 2%;
+}
+
 .info-conteudo {
     top: 100px;
     height: 70%;
