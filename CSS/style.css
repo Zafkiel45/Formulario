@@ -173,6 +173,26 @@ input::placeholder {
     color: rgb(88, 88, 88);
 }
 
+#rodape {
+    display: flex;
+    background-color: rgb(30, 29, 29);
+    color: white;
+    padding: 2em;
+}
+
+#footer-logo {
+    flex-grow: 1;
+    margin: fit-content;
+    font-size: 2.5em;
+}
+
+#rodape > ol {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
 
 @media(max-width: 768px){
     .texto {
@@ -203,6 +223,22 @@ input::placeholder {
         left: 10px;
         padding: 0;
         font-size: 13px;
+    }
+
+    #rodape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-logo {
+        order: -1;
+        text-align: center;
+        margin: 2% 0%;
+    }
+
+    #rodape > ol {
+        align-items: center;
+        justify-content: center;
     }
 }
 
