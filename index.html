@@ -22,13 +22,13 @@
             <form action="">
                 <div class="user">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome...">
+                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome..." minlength="2" maxlength="20">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required placeholder="Digite seu Email...">
                 </div>
                 <div class="sobre">
                     <label for="sobre" id="other">Mais Sobre você ...</label>
-                    <textarea name="mensagem" id="sobre" cols="30" rows="10"></textarea>
+                    <textarea name="mensagem" id="sobre" cols="20" rows="10" required minlength="5" maxlength="500"></textarea>
                 </div>
                 <div class="termo">
                     <input type="checkbox" name="termo" id="checked">

@@ -58,11 +58,23 @@ body {
     background: rgb(219, 219, 219);
 }
 
+#nome:valid {
+    border: 2px solid green;
+}
+
 #email {
     height: 40px;
     border: none;
     border-radius: 20px;
     background: rgb(219, 219, 219);
+}
+
+#email:valid {
+    border: 2px solid green;
+}
+
+#email:invalid {
+    border: 2px solid orange;
 }
 
 .sobre {
@@ -74,6 +86,14 @@ body {
     border: none;
     border-radius: 20px;
     background: rgb(219, 219, 219);
+}
+
+#sobre:valid {
+    border: 2px solid green;
+}
+
+#sobre:invalid {
+    border: 2px solid orange;
 }
 
 #other {
@@ -121,9 +141,12 @@ a:visited {
 }
 
 textarea,
-label,
 input {
     padding: 3.5%;
+}
+
+label {
+    padding: 0% 3.5%
 }
 
 .info-conteudo {
@@ -158,7 +181,7 @@ input::placeholder {
 
     label {
         position: relative;
-        left: 10px;
+        left: 5px;
     }
 
     .titulo-1 {
@@ -174,11 +197,22 @@ input::placeholder {
     .info {
         order: -1;
     }
+
+    label {
+        position: relative;
+        left: 10px;
+        padding: 0;
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 400px){
     .form {
         min-width: 200px;
         max-width: 400px;
+    }
+
+    label {
+        padding: 0;
     }
 }
