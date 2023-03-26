@@ -1,0 +1,6 @@
+@function conversor($alvo, $contexto){
+    @return #{$alvo / $contexto}em;
+}
+@function conversorPorcentagem($num1, $num2){
+    @return ($num1 / $num2) * 100%;
+}

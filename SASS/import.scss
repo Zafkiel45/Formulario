@@ -1,0 +1,14 @@
+@use 'header';
+@use 'form';
+@use 'footer';
+@use 'functions';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: box-sizing;
+}
+
+body {
+    background-image: linear-gradient(80deg, #E08AEB, #D472B8, #AE72D4, #AB85F6);
+}
+

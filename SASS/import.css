@@ -1,0 +1,164 @@
+@charset "UTF-8";
+.menu {
+  gap: 1.875em;
+  color: grey;
+  display: flex;
+  padding: 2.1897810219%;
+  list-style: none;
+  background-color: white;
+}
+.menu .logo {
+  flex-grow: 1;
+}
+.menu .item:hover {
+  transform: scale(1.2);
+}
+
+.seção {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 2px 3px black;
+}
+.seção .form {
+  margin: 5%;
+  display: flex;
+  padding: 2.5em;
+  min-width: 400px;
+  max-width: 600px;
+  border-radius: 1.25em;
+  flex-direction: column;
+  background-color: #fff;
+}
+.seção .form .user {
+  gap: 0.6em;
+  display: flex;
+  flex-direction: column;
+}
+.seção .form .user #nome {
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  background: rgb(219, 219, 219);
+}
+.seção .form .user #email {
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(219, 219, 219);
+}
+.seção .form .sobre {
+  display: flex;
+  flex-direction: column;
+}
+.seção .form .sobre #sobre {
+  border: none;
+  border-radius: 20px;
+  background: rgb(219, 219, 219);
+}
+.seção .form .sobre #other {
+  margin: 4% 0%;
+}
+.seção .form .termo {
+  margin: 4% 0%;
+  font-style: italic;
+}
+.seção .form .termo #checked {
+  accent-color: purple;
+}
+.seção .form .termo a {
+  color: blue;
+  text-decoration: none;
+}
+.seção .form .termo a:visited {
+  color: green;
+}
+.seção .form .titulo-2 {
+  margin: 2%;
+}
+.seção .form .submit {
+  text-align: center;
+}
+.seção .form .submit #button {
+  width: 80%;
+  height: 3em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 1.25em;
+  background-color: rgb(229, 99, 254);
+}
+.seção .info {
+  height: 100vh;
+  background-color: rgba(192, 249, 255, 0.728);
+}
+.seção .info .info-conteudo {
+  top: 100px;
+  height: 70%;
+  display: flex;
+  color: white;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.seção .info .info-conteudo .texto {
+  width: 60%;
+  font-size: 2em;
+}
+.seção .titulo-1 {
+  font-size: 5em;
+}
+
+textarea,
+input {
+  padding: 3.5%;
+}
+
+label {
+  padding: 0% 3.5%;
+}
+
+input::-moz-placeholder {
+  padding-left: 20px;
+  color: rgb(88, 88, 88);
+}
+
+input:-ms-input-placeholder {
+  padding-left: 20px;
+  color: rgb(88, 88, 88);
+}
+
+input::placeholder {
+  padding-left: 20px;
+  color: rgb(88, 88, 88);
+}
+
+#rodape {
+  display: flex;
+  background-color: rgb(30, 29, 29);
+  color: white;
+  padding: 2em;
+}
+#rodape #footer-logo {
+  flex-grow: 1;
+  margin: fit-content;
+  font-size: 2.5em;
+}
+
+#rodape > ol {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: box-sizing;
+}
+
+body {
+  background-image: linear-gradient(80deg, #E08AEB, #D472B8, #AE72D4, #AB85F6);
+}/*# sourceMappingURL=import.css.map */
