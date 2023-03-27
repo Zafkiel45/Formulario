@@ -1,75 +1,93 @@
 @use 'functions' as conversor;
 
-.seção {
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 2px 2px 3px black;
-    z-index: 1;
-    .form {
-        margin: 5%;
-        display: flex;
-        padding: 2.50em;
-        min-width: 400px;
-        max-width: 600px; 
-        border-radius: 1.25em;
-        flex-direction: column;
-        background-color: #fff;
-        .user {
-            gap: 0.60em;
+main {
+display: flex;
+gap: 1.25em;
+    .seção {
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+        margin: 0 5%;
+        .form {
+            margin: 5%;
             display: flex;
+            padding: 2.50em;
+            min-width: 400px;
+            max-width: 600px; 
+            border-radius: 1.25em;
             flex-direction: column;
-            #nome,#email {
-                border: none;
-                height: conversor.conversor(40px, 16px);
-                outline: none;
-                appearance: none;
-                border-radius: conversor.conversor(5px, 16px);
-                background: rgb(219, 219, 219);
+            background-color: #fff;
+            .user {
+                gap: 0.60em;
+                display: flex;
+                flex-direction: column;
+                #nome,#email {
+                    border: none;
+                    height: conversor.conversor(40px, 16px);
+                    outline: none;
+                    appearance: none;
+                    border-radius: conversor.conversor(5px, 16px);
+                    background: rgb(219, 219, 219);
+                }
             }
-        }
-        .sobre {
-            display: flex;
-            flex-direction: column;
-            #sobre {
-                border: none;
-                border-radius: 20px;
-                background: rgb(219, 219, 219);
+            .sobre {
+                display: flex;
+                flex-direction: column;
+                #sobre {
+                    border: none;
+                    border-radius: 20px;
+                    background: rgb(219, 219, 219);
+                }
+                #other {
+                    margin: 4% 0%;
+                }
             }
-            #other {
+            .termo {
                 margin: 4% 0%;
+                font-style: italic;
+                #checked {
+                    accent-color: purple;
+                }
+                a {
+                    color: blue;
+                    text-decoration: none;
+                }
+                
+                a:visited {
+                    color: green;
+                }
+            }
+            .titulo-2 {
+                margin: 2%;
+            }
+            .submit {
+                text-align: center;
+                #button {
+                    width: 80%;
+                    height: 3em;
+                    border: none;
+                    color: white;
+                    font-size: 1.20em;
+                    border-radius: 1.25em;
+                    background-color: rgb(229, 99, 254);
+                }
             }
         }
-        .termo {
-            margin: 4% 0%;
-            font-style: italic;
-            #checked {
-                accent-color: purple;
-            }
-            a {
-                color: blue;
-                text-decoration: none;
-            }
-            
-            a:visited {
-                color: green;
-            }
-        }
-        .titulo-2 {
-            margin: 2%;
-        }
-        .submit {
-            text-align: center;
-            #button {
-                width: 80%;
-                height: 3em;
-                border: none;
-                color: white;
-                font-size: 1.20em;
-                border-radius: 1.25em;
-                background-color: rgb(229, 99, 254);
-            }
-        }
+    }
+    .titulo-1 {
+        font-size: 5em;
+    }
+    textarea,
+    input {
+        padding: 3.5%;
+    }
+    label {
+        padding: 0% 3.5%
+    }
+    input::placeholder {
+        padding-left: 20px;
+        color: rgb(88, 88, 88);
     }
     .info {
         height: 100vh;
@@ -89,18 +107,4 @@
             }
         }
     }
-    .titulo-1 {
-        font-size: 5em;
-    }
-}
-textarea,
-input {
-    padding: 3.5%;
-}
-label {
-    padding: 0% 3.5%
-}
-input::placeholder {
-    padding-left: 20px;
-    color: rgb(88, 88, 88);
 }

@@ -2,7 +2,7 @@ const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
 const sidebar = document.querySelector('#sidebar');
 const body = document.querySelector('#corpo');
-const section = document.querySelectorAll('.seção');
+const section = document.querySelectorAll('main');
 
 next.addEventListener('click', function(){
     sidebar.style.left = '0'

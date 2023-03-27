@@ -4,41 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Formulário, dev, junior, JavaScript, SASS">
+    <meta name="description" content="Formulário simples com um design moderno">
     <title>Formulário</title>
     <link rel="stylesheet" href="SASS/import.css">
 </head>
 <body id="corpo">
     <!-- Header -->
     <header id="menu">
+        <!-- botão -->
         <div id="next_container">
             <button id="next">
                 <img src="SVG/list.svg" alt="SVG de uma lista" class="svg_header">
             </button>
         </div>
-        <p class="logo">Logo</p>
+        <!-- Logo -->
+        <p id="logo">Logo</p>
+        <!-- Lista de Menu -->
         <ol id="list_menu">
             <li class="item">
-                <img src="SVG/user-fill.svg" alt="inco de usuário" class="svg_header"> item</li>
+                <img src="SVG/user-fill.svg" alt="inco de usuário" class="svg_header"> item
+            </li>
             <li class="item">
-                <img src="SVG/suport-text.svg" alt="icone do suporte" class="svg_header"> item</li>
+                <img src="SVG/suport-text.svg" alt="icone do suporte" class="svg_header"> item
+            </li>
         </ol>
+        <!-- Fim menu -->
         <!-- Sidebar. -->
         <div id="sidebar">
+            <!-- Botão -->
             <div id="prev_container">
                 <button id="prev">
                     <img src="SVG/x.svg" alt="SVG de um X" class="svg_header">
                 </button>
             </div>
+            <!-- Lista de elementos do sidebar -->
             <ol id="list_sidebar">
                 <li class="item_side">
-                    <img src="SVG/user-fill.svg" alt="inco de usuário" class="svg_header"> item</li>
+                    <img src="SVG/user-fill.svg" alt="inco de usuário" class="svg_header">item
+                </li>
                 <li class="item_side">
-                    <img src="SVG/suport-text.svg" alt="icone do suporte" class="svg_header">item</li>
+                    <img src="SVG/suport-text.svg" alt="icone do suporte" class="svg_header">item
+                </li>
             </ol>
         </div>
     </header>
 
     <!-- Formulário  -->
+<main>
     <section class="seção">
         <div class="form">
             <h2 class="titulo-2">Comece o seu teste grátis</h2>
@@ -75,13 +88,14 @@
                 </div>
             </form>
         </div>
-        <div class="info">
-            <div class="info-conteudo">
-                <h1 class="titulo-1">Lorem Ipson</h1>
-                <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo fugit deleniti saepe aspernatur animi omnis inventore, impedit cumque ipsa provident nam ratione fugiat sunt, sit officiis sint debitis possimus excepturi!</p>
-            </div>
-        </div>
     </section>
+    <div class="info">
+        <div class="info-conteudo">
+            <h1 class="titulo-1">Lorem Ipson</h1>
+            <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo fugit deleniti saepe aspernatur animi omnis inventore, impedit cumque ipsa provident nam ratione fugiat sunt, sit officiis sint debitis possimus excepturi!</p>
+        </div>
+    </div>
+</main>
     <footer id="rodape">
         <div id="footer-logo">
             <p id="rodape-logo">LOGO</p>

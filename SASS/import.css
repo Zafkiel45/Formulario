@@ -8,6 +8,9 @@
   background-color: white;
   align-items: center;
 }
+#menu #logo {
+  font-size: 2em;
+}
 #menu #list_menu {
   list-style: none;
   display: flex;
@@ -54,7 +57,7 @@
   gap: 1.25em;
   padding-top: 4%;
   transition: 0.9s ease-in-out;
-  box-shadow: 0px 1px 10px black;
+  box-shadow: 0px 2px 1px black;
 }
 #menu #sidebar #list_sidebar {
   display: flex;
@@ -82,14 +85,18 @@
   }
 }
 
-.seção {
+main {
+  display: flex;
+  gap: 1.25em;
+}
+main .seção {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 2px 2px 3px black;
   z-index: 1;
+  margin: 0 5%;
 }
-.seção .form {
+main .seção .form {
   margin: 5%;
   display: flex;
   padding: 2.5em;
@@ -99,12 +106,12 @@
   flex-direction: column;
   background-color: #fff;
 }
-.seção .form .user {
+main .seção .form .user {
   gap: 0.6em;
   display: flex;
   flex-direction: column;
 }
-.seção .form .user #nome, .seção .form .user #email {
+main .seção .form .user #nome, main .seção .form .user #email {
   border: none;
   height: 2.5em;
   outline: none;
@@ -114,39 +121,39 @@
   border-radius: 0.3125em;
   background: rgb(219, 219, 219);
 }
-.seção .form .sobre {
+main .seção .form .sobre {
   display: flex;
   flex-direction: column;
 }
-.seção .form .sobre #sobre {
+main .seção .form .sobre #sobre {
   border: none;
   border-radius: 20px;
   background: rgb(219, 219, 219);
 }
-.seção .form .sobre #other {
+main .seção .form .sobre #other {
   margin: 4% 0%;
 }
-.seção .form .termo {
+main .seção .form .termo {
   margin: 4% 0%;
   font-style: italic;
 }
-.seção .form .termo #checked {
+main .seção .form .termo #checked {
   accent-color: purple;
 }
-.seção .form .termo a {
+main .seção .form .termo a {
   color: blue;
   text-decoration: none;
 }
-.seção .form .termo a:visited {
+main .seção .form .termo a:visited {
   color: green;
 }
-.seção .form .titulo-2 {
+main .seção .form .titulo-2 {
   margin: 2%;
 }
-.seção .form .submit {
+main .seção .form .submit {
   text-align: center;
 }
-.seção .form .submit #button {
+main .seção .form .submit #button {
   width: 80%;
   height: 3em;
   border: none;
@@ -155,11 +162,33 @@
   border-radius: 1.25em;
   background-color: rgb(229, 99, 254);
 }
-.seção .info {
+main .titulo-1 {
+  font-size: 5em;
+}
+main textarea,
+main input {
+  padding: 3.5%;
+}
+main label {
+  padding: 0% 3.5%;
+}
+main input::-moz-placeholder {
+  padding-left: 20px;
+  color: rgb(88, 88, 88);
+}
+main input:-ms-input-placeholder {
+  padding-left: 20px;
+  color: rgb(88, 88, 88);
+}
+main input::placeholder {
+  padding-left: 20px;
+  color: rgb(88, 88, 88);
+}
+main .info {
   height: 100vh;
   background-color: rgba(192, 249, 255, 0.728);
 }
-.seção .info .info-conteudo {
+main .info .info-conteudo {
   top: 100px;
   height: 70%;
   display: flex;
@@ -169,36 +198,9 @@
   flex-direction: column;
   justify-content: center;
 }
-.seção .info .info-conteudo .texto {
+main .info .info-conteudo .texto {
   width: 60%;
   font-size: 2em;
-}
-.seção .titulo-1 {
-  font-size: 5em;
-}
-
-textarea,
-input {
-  padding: 3.5%;
-}
-
-label {
-  padding: 0% 3.5%;
-}
-
-input::-moz-placeholder {
-  padding-left: 20px;
-  color: rgb(88, 88, 88);
-}
-
-input:-ms-input-placeholder {
-  padding-left: 20px;
-  color: rgb(88, 88, 88);
-}
-
-input::placeholder {
-  padding-left: 20px;
-  color: rgb(88, 88, 88);
 }
 
 #rodape {
