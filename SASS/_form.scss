@@ -1,3 +1,5 @@
+@use 'functions' as conversor;
+
 .seção {
     display: flex; 
     align-items: center;
@@ -16,16 +18,12 @@
             gap: 0.60em;
             display: flex;
             flex-direction: column;
-            #nome {
+            #nome,#email {
                 border: none;
-                height: 40px;
-                border-radius: 20px;
-                background: rgb(219, 219, 219);
-            }
-            #email {
-                height: 40px;
-                border: none;
-                border-radius: 20px;
+                height: conversor.conversor(40px, 16px);
+                outline: none;
+                appearance: none;
+                border-radius: conversor.conversor(5px, 16px);
                 background: rgb(219, 219, 219);
             }
         }

@@ -21,18 +21,29 @@
             <h2 class="titulo-2">Comece o seu teste grátis</h2>
             <form action="">
                 <div class="user">
+                    <!-- input de texto -->
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome..." minlength="2" maxlength="20">
+                    <input type="text" name="nome" class="input" id="nome" required placeholder="Digite seu nome..." minlength="2" maxlength="20">
+                    <!-- Mensagem de erro -->
+                    <span class="invalid">Digite no mínimo 4 digítos</span>
+                    <!-- Email input -->
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required placeholder="Digite seu Email...">
+                    <input type="email" name="email" class="input" id="email" required placeholder="Digite seu Email...">
                 </div>
+                <!-- informações adicionais sobre o usuário -->
                 <div class="sobre">
                     <label for="sobre" id="other">Mais Sobre você ...</label>
-                    <textarea name="mensagem" id="sobre" cols="20" rows="10" required minlength="5" maxlength="500"></textarea>
+                    <textarea name="mensagem" id="sobre" cols="20" rows="10" required minlength="5" maxlength="500" class="input"></textarea>
+                    <!-- invalid texarea -->
+                    <span class="invalid">Digite no mínimo 4 dígitos</span>
                 </div>
+                <!-- Termos de Uso -->
                 <div class="termo">
                     <input type="checkbox" name="termo" id="checked">
                     <label for="checked">Eu aceito os <a href="#" target="_blank">Termo de uso</a></label>
+                    <!-- not checked use terms -->
+                    <br>
+                    <span class="invalid">Leia e aceite os termos de uso</span>
                 </div>
                 <div class="submit">
                     <input type="submit" value="Confirmar" id="button">
