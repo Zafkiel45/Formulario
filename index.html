@@ -7,39 +7,64 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="SASS/import.css">
 </head>
-<body>
-    <header>
-        <nav class="menu">
-            <li class="logo">Logo</li>
-            <li class="item">item</li>
-            <li class="item">item</li>
-            <li class="item">item</li>
-        </nav>
+<body id="corpo">
+    <!-- Header -->
+    <header id="menu">
+        <div id="next_container">
+            <button id="next">
+                <img src="SVG/list.svg" alt="SVG de uma lista" class="svg_header">
+            </button>
+        </div>
+        <p class="logo">Logo</p>
+        <ol id="list_menu">
+            <li class="item">
+                <img src="SVG/user-fill.svg" alt="inco de usuário" class="svg_header"> item</li>
+            <li class="item">
+                <img src="SVG/suport-text.svg" alt="icone do suporte" class="svg_header"> item</li>
+        </ol>
+        <!-- Sidebar. -->
+        <div id="sidebar">
+            <div id="prev_container">
+                <button id="prev">
+                    <img src="SVG/x.svg" alt="SVG de um X" class="svg_header">
+                </button>
+            </div>
+            <ol id="list_sidebar">
+                <li class="item_side">
+                    <img src="SVG/user-fill.svg" alt="inco de usuário" class="svg_header"> item</li>
+                <li class="item_side">
+                    <img src="SVG/suport-text.svg" alt="icone do suporte" class="svg_header">item</li>
+            </ol>
+        </div>
     </header>
+
+    <!-- Formulário  -->
     <section class="seção">
         <div class="form">
             <h2 class="titulo-2">Comece o seu teste grátis</h2>
-            <form action="">
+            <form action="" id="form">
                 <div class="user">
                     <!-- input de texto -->
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="input" id="nome" required placeholder="Digite seu nome..." minlength="2" maxlength="20">
+                    <input type="text" name="nome" class="input erro" id="nome" required placeholder="Digite seu nome..." maxlength="20">
                     <!-- Mensagem de erro -->
                     <span class="invalid">Digite no mínimo 4 digítos</span>
                     <!-- Email input -->
                     <label for="email">Email</label>
-                    <input type="email" name="email" class="input" id="email" required placeholder="Digite seu Email...">
+                    <input type="email" name="email" class="input erro" id="email" required placeholder="Digite seu Email..." pattern="[A-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <!-- Mensagem de erro no email -->
+                    <span class="invalid">Digite um Email correto</span>
                 </div>
                 <!-- informações adicionais sobre o usuário -->
                 <div class="sobre">
                     <label for="sobre" id="other">Mais Sobre você ...</label>
-                    <textarea name="mensagem" id="sobre" cols="20" rows="10" required minlength="5" maxlength="500" class="input"></textarea>
+                    <textarea name="mensagem" id="sobre" cols="20" rows="10" required minlength="5" maxlength="500" class="input erro"></textarea>
                     <!-- invalid texarea -->
                     <span class="invalid">Digite no mínimo 4 dígitos</span>
                 </div>
                 <!-- Termos de Uso -->
                 <div class="termo">
-                    <input type="checkbox" name="termo" id="checked">
+                    <input type="checkbox" name="termo" class="input erro" id="checked">
                     <label for="checked">Eu aceito os <a href="#" target="_blank">Termo de uso</a></label>
                     <!-- not checked use terms -->
                     <br>
@@ -71,5 +96,6 @@
         </ol>
     </footer>
     <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/sidebar.js"></script>
 </body>
 </html>

@@ -1,17 +1,85 @@
 @charset "UTF-8";
-.menu {
+#menu {
+  position: relative;
   gap: 1.875em;
-  color: grey;
+  padding: 1.4598540146%;
   display: flex;
-  padding: 2.1897810219%;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+#menu #list_menu {
+  list-style: none;
+  display: flex;
+  color: grey;
+  gap: 2.5em;
+}
+#menu #list_menu .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menu #list_menu .item:hover {
+  transform: scale(1.2);
+}
+.item .svg_header {
+  width: 1.5625em;
+  height: 1.5625em;
+}
+
+#menu #next_container, #menu #prev_container {
+  display: none;
+}
+#menu #next_container #next, #menu #next_container #prev, #menu #prev_container #next, #menu #prev_container #prev {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#menu #next_container #next .svg_header, #menu #next_container #prev .svg_header, #menu #prev_container #next .svg_header, #menu #prev_container #prev .svg_header {
+  height: 1.875em;
+  width: 1.875em;
+}
+#menu #sidebar {
+  position: absolute;
+  top: 0;
+  left: -100%;
   list-style: none;
   background-color: white;
+  height: 100vh;
+  width: 25vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+  padding-top: 4%;
+  transition: 0.9s ease-in-out;
+  box-shadow: 0px 1px 10px black;
 }
-.menu .logo {
-  flex-grow: 1;
+#menu #sidebar #list_sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
 }
-.menu .item:hover {
-  transform: scale(1.2);
+#menu #sidebar #list_sidebar .item_side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+}
+#list_sidebar .svg_header {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  #menu #next_container, #menu #prev_container {
+    display: block;
+  }
+  #menu #list_menu {
+    display: none;
+  }
 }
 
 .seção {
@@ -19,6 +87,7 @@
   align-items: center;
   justify-content: space-around;
   box-shadow: 2px 2px 3px black;
+  z-index: 1;
 }
 .seção .form {
   margin: 5%;

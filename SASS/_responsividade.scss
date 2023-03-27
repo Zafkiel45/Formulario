@@ -1,5 +1,30 @@
-$max: 1400px;
-$large: 1370px;
-$big: 1040px;
-$medium: 720px;
-$small: 420px;
+$max: 1440px;
+$large: 1024px;
+$big: 768px;
+$medium: 425px;
+$small: 375px;
+
+
+@mixin responsive($break){
+    @if $break == max {
+        @media screen and (max-width: $max){
+            @content;
+        }
+    } @else if $break == large {
+        @media screen and (max-width: $large){
+            @content;
+        }
+    } @else if $break == big {
+        @media screen and (max-width: $big){
+            @content;
+        }
+    } @else if $break == medium {
+        @media screen and (max-width: $medium){
+            @content;
+        }
+    } @else if $break == small {
+        @media screen and (max-width: $small){
+            @content;
+        }
+    }
+}

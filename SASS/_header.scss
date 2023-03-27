@@ -1,19 +1,91 @@
 @use 'functions' as converter;
-
-.menu {
+@use 'responsividade' as res;
+#menu {
+    // container do menu (header). 
+    position: relative;
     gap: converter.conversor(30px, 16px);
-    color: grey;
+    padding: converter.conversorPorcentagem(20px, 1370px);
     display: flex;
-    padding: converter.conversorPorcentagem(30px, 1370px);
-    list-style: none;
+    justify-content: space-between;
     background-color: white;
-    .logo {
-        flex-grow: 1;
+    align-items: center;
+    // lista dos elementos do menu. ===================================================
+    #list_menu {
+        list-style: none;
+        display: flex;
+        color: grey;
+        gap: converter.conversor(40px, 16px);
+        // itens do menu.===============================================================================
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        @at-root .item .svg_header {
+            width: converter.conversor(25px, 16px);
+            height: converter.conversor(25px, 16px);
+        }
     }
-    .item {
-        &:hover {
-        transform: scale(1.2);
+    // botão ================================================================================================
+    #next_container,#prev_container {
+        display: none;
+        #next, #prev{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            .svg_header {
+                height: converter.conversor(30px, 16px);
+                width: converter.conversor(30px, 16px);
+            }
+        }
     }
+    //sidebar ================================================================================================
+    #sidebar {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        list-style: none;
+        background-color: white;
+        height: 100vh; 
+        width: 25vw;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25em;
+        padding-top: 4%;
+        transition: 0.9s ease-in-out;
+        box-shadow: 0px 1px 10px black;
+        // lista-sidebar =====================================================================================
+        #list_sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25em;
+            .item_side {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.25em;
+            }
+            @at-root #list_sidebar .svg_header {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    // responsividade ----------------------------------------------------------------------------------------
+    @include res.responsive(big){
+        #next_container, #prev_container {
+            display: block;
+        }
+        #list_menu {
+            display: none;
+        }
+
     }
 }
 
