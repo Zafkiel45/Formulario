@@ -85,6 +85,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 425px) {
+  #menu #logo {
+    font-size: 1.5em;
+  }
+}
 
 main {
   display: flex;
@@ -103,7 +108,6 @@ main .seção .form {
   margin: 5%;
   display: flex;
   padding: 2.5em;
-  min-width: 400px;
   max-width: 600px;
   border-radius: 1.25em;
   flex-direction: column;
@@ -170,14 +174,12 @@ main .seção .form .submit #button {
   font-weight: 500;
   text-shadow: 1px 1px 1px black;
   border-radius: 1.25em;
+  cursor: pointer;
   background: linear-gradient(150deg, rgb(245, 100, 240) 7%, rgb(214, 3, 200) 30%, rgb(195, 56, 223) 77%);
 }
 main .seção .form .submit #button:active {
   position: relative;
   top: 2px;
-}
-main .titulo-1 {
-  font-size: 5em;
 }
 main textarea,
 main input {
@@ -213,9 +215,68 @@ main .info .info-conteudo {
   flex-direction: column;
   justify-content: center;
 }
+main .info .info-conteudo .titulo-1 {
+  font-size: 5em;
+}
 main .info .info-conteudo .texto {
   width: 60%;
   font-size: 2em;
+}
+@media screen and (max-width: 1024px) {
+  main .info .info-conteudo .titulo-1 {
+    font-size: 3.5em;
+  }
+  main .info .info-conteudo .texto {
+    font-size: 1.5em;
+  }
+  main .seção .form .titulo-2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .info {
+    order: -1;
+    padding: 3em;
+  }
+  main .info .info-conteudo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .seção .form {
+    width: 350px;
+  }
+  main .seção .form .titulo-2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 2%;
+  }
+  main .seção .form .user #nome, #email {
+    width: 275px;
+    height: 2em;
+  }
+  main .seção .form .sobre #sobre {
+    width: 270px;
+  }
+  main .seção .form .submit #button {
+    padding: 2em 4em;
+  }
+  main .info .info-conteudo .texto {
+    width: 80%;
+    font-size: 1.3em;
+  }
+  main label {
+    font-size: 0.8em;
+  }
 }
 
 #rodape {
@@ -264,28 +325,45 @@ main .info .info-conteudo .texto {
 #rodape a:hover {
   color: rgb(95, 95, 238);
 }
+@media screen and (max-width: 425px) {
+  #rodape {
+    place-items: center;
+    justify-content: space-around;
+    grid-template-areas: "cont1 cont3";
+  }
+  #rodape #container_1 {
+    display: none;
+  }
+  #rodape #container_2 {
+    padding: 1em;
+    border-left: none;
+  }
+  #rodape #container_logo {
+    display: none;
+  }
+}
 
 #container_1 {
   grid-area: "logo";
-  border-left: 1px solid gray;
+  border-left: 2px solid gray;
   padding-left: 2em;
 }
 
 #container_2 {
   grid-area: "cont1";
-  border-left: 1px solid gray;
+  border-left: 2px solid gray;
   padding-left: 2em;
 }
 
 #container_3 {
   grid-area: "cont2";
-  border-left: 1px solid gray;
+  border-left: 2px solid gray;
   padding-left: 2em;
 }
 
 #container_4 {
   grid-area: "cont3";
-  border-left: 1px solid gray;
+  border-left: 2px solid gray;
   padding-left: 2em;
 }
 

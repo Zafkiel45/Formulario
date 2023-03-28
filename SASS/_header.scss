@@ -88,7 +88,11 @@
         #list_menu {
             display: none;
         }
-
+    }
+    @include res.responsive(medium){
+        #logo {
+            font-size: 1.5em;
+        }
     }
 }
 

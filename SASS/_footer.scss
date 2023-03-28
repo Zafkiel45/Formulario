@@ -1,3 +1,5 @@
+@use 'responsividade' as adapt;
+
 #rodape {
     background-color: rgb(25, 23, 23);
     color: white;
@@ -49,6 +51,22 @@
             color: rgb(95, 95, 238);
         }
     }
+    @include adapt.responsive(medium){
+        place-items: center;
+        justify-content: space-around;
+        grid-template-areas: 
+        "cont1 cont3";
+        #container_1 {
+            display: none;
+        }
+        #container_2 {
+            padding: 1em;
+            border-left: none;
+        }
+        #container_logo {
+            display: none;
+        }
+    }
 }
 
 $area: "logo", "cont1", "cont2", "cont3";
@@ -56,7 +74,7 @@ $area: "logo", "cont1", "cont2", "cont3";
 @for $cont from 1 through length($area) {
     #container_#{$cont}{
         grid-area: nth($area, $cont);
-        border-left: 1px solid gray;
+        border-left: 2px solid gray;
         padding-left: 2em;
     }
 }

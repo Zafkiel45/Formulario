@@ -1,4 +1,5 @@
 @use 'functions' as conversor;
+@use 'responsividade' as adapt;
 
 main {
 display: flex;
@@ -15,7 +16,6 @@ height: 900px;
             margin: 5%;
             display: flex;
             padding: 2.50em;
-            min-width: 400px;
             max-width: 600px; 
             border-radius: 1.25em;
             flex-direction: column;
@@ -79,6 +79,7 @@ height: 900px;
                     font-weight: 500;
                     text-shadow: 1px 1px 1px black;
                     border-radius: 1.25em;
+                    cursor: pointer;
                     background: linear-gradient(150deg, rgb(245, 100, 240) 7%, rgb(214, 3, 200) 30%, rgb(195, 56, 223) 77%);
                     &:active {
                         position: relative;
@@ -87,9 +88,6 @@ height: 900px;
                 }
             }
         }
-    }
-    .titulo-1 {
-        font-size: 5em;
     }
     textarea,
     input {
@@ -115,10 +113,65 @@ height: 900px;
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            .titulo-1 {
+                font-size: 5em;
+            }
             .texto {
                 width: 60%;
                 font-size: 2em;
             }
+        }
+    }
+    @include adapt.responsive(large){
+        @at-root main .info .info-conteudo .titulo-1 {
+            font-size: 3.5em;
+        }
+        @at-root main .info .info-conteudo .texto {
+            font-size: 1.5em;
+        }
+        @at-root main .seção .form .titulo-2 {
+            font-size: 1.5em;
+        }
+    }
+    @include adapt.responsive(big){
+        flex-direction: column;
+        height: fit-content;
+        .info {
+            order: -1;
+            padding: 3em;
+            .info-conteudo {
+                height: fit-content;
+                top: 0;
+            }
+        }
+    }
+    @include adapt.responsive(medium){
+        .seção {
+            .form {
+                width: 350px;
+                .titulo-2 {
+                    text-align: center;
+                    font-size: 1.3em;
+                    margin: 2%;
+                }
+            }
+        }
+        @at-root main .seção .form .user #nome, #email {
+            width: 275px;
+            height: 2em;
+        }
+        @at-root main .seção .form .sobre #sobre {
+            width: 270px;
+        }
+        @at-root main .seção .form .submit #button {
+            padding: 2em 4em;
+        }
+        @at-root main .info .info-conteudo .texto {
+            width: 80%;
+            font-size: 1.3em;
+        }
+        label {
+            font-size: 0.8em;
         }
     }
 }
