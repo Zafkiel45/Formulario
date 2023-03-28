@@ -3,12 +3,14 @@
 main {
 display: flex;
 gap: 1.25em;
+height: 900px;
     .seção {
         display: flex; 
         align-items: center;
         justify-content: space-around;
         z-index: 1;
         margin: 0 5%;
+        height: 100%;
         .form {
             margin: 5%;
             display: flex;
@@ -44,7 +46,7 @@ gap: 1.25em;
                 }
             }
             .termo {
-                margin: 4% 0%;
+                margin: 4% 2%;
                 font-style: italic;
                 #checked {
                     accent-color: purple;
@@ -59,18 +61,29 @@ gap: 1.25em;
                 }
             }
             .titulo-2 {
-                margin: 2%;
+                font-size: 2em;
+                margin: 3%;
             }
             .submit {
-                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 #button {
-                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    padding: 2em 6em;
                     height: 3em;
                     border: none;
                     color: white;
-                    font-size: 1.20em;
+                    font-size: 1.25em;
+                    font-weight: 500;
+                    text-shadow: 1px 1px 1px black;
                     border-radius: 1.25em;
-                    background-color: rgb(229, 99, 254);
+                    background: linear-gradient(150deg, rgb(245, 100, 240) 7%, rgb(214, 3, 200) 30%, rgb(195, 56, 223) 77%);
+                    &:active {
+                        position: relative;
+                        top: 2px;
+                    }
                 }
             }
         }
@@ -81,16 +94,17 @@ gap: 1.25em;
     textarea,
     input {
         padding: 3.5%;
+        outline: none;
     }
     label {
-        padding: 0% 3.5%
+        padding: 0% 1%
     }
     input::placeholder {
         padding-left: 20px;
         color: rgb(88, 88, 88);
     }
     .info {
-        height: 100vh;
+        height: 100%;
         background-color: rgba(192, 249, 255, 0.728);
         .info-conteudo {
             top: 100px;

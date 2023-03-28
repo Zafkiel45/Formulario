@@ -4,11 +4,13 @@
 @use 'functions';
 @use 'validação';
 @use 'responsividade';
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: box-sizing;
+    font-family: 'Arimo', Arial, Helvetica, sans-serif;
 }
 
 body {

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 #menu {
   position: relative;
   gap: 1.875em;
@@ -88,6 +89,7 @@
 main {
   display: flex;
   gap: 1.25em;
+  height: 900px;
 }
 main .seção {
   display: flex;
@@ -95,6 +97,7 @@ main .seção {
   justify-content: space-around;
   z-index: 1;
   margin: 0 5%;
+  height: 100%;
 }
 main .seção .form {
   margin: 5%;
@@ -134,7 +137,7 @@ main .seção .form .sobre #other {
   margin: 4% 0%;
 }
 main .seção .form .termo {
-  margin: 4% 0%;
+  margin: 4% 2%;
   font-style: italic;
 }
 main .seção .form .termo #checked {
@@ -148,19 +151,30 @@ main .seção .form .termo a:visited {
   color: green;
 }
 main .seção .form .titulo-2 {
-  margin: 2%;
+  font-size: 2em;
+  margin: 3%;
 }
 main .seção .form .submit {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .seção .form .submit #button {
-  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 2em 6em;
   height: 3em;
   border: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px black;
   border-radius: 1.25em;
-  background-color: rgb(229, 99, 254);
+  background: linear-gradient(150deg, rgb(245, 100, 240) 7%, rgb(214, 3, 200) 30%, rgb(195, 56, 223) 77%);
+}
+main .seção .form .submit #button:active {
+  position: relative;
+  top: 2px;
 }
 main .titulo-1 {
   font-size: 5em;
@@ -168,9 +182,10 @@ main .titulo-1 {
 main textarea,
 main input {
   padding: 3.5%;
+  outline: none;
 }
 main label {
-  padding: 0% 3.5%;
+  padding: 0% 1%;
 }
 main input::-moz-placeholder {
   padding-left: 20px;
@@ -185,7 +200,7 @@ main input::placeholder {
   color: rgb(88, 88, 88);
 }
 main .info {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(192, 249, 255, 0.728);
 }
 main .info .info-conteudo {
@@ -204,22 +219,74 @@ main .info .info-conteudo .texto {
 }
 
 #rodape {
-  display: flex;
-  background-color: rgb(30, 29, 29);
+  background-color: rgb(25, 23, 23);
   color: white;
-  padding: 2em;
+  display: grid;
+  padding: 3% 5%;
+  justify-content: space-between;
+  grid-template-areas: "logo cont1 cont2 cont3";
 }
-#rodape #footer-logo {
-  flex-grow: 1;
-  margin: fit-content;
-  font-size: 2.5em;
+#rodape #social_media {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+#rodape #social_media .img {
+  width: 40px;
+  height: 40px;
+}
+#rodape #social_media .git {
+  width: 50px;
+  height: 50px;
+}
+#rodape .list_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56em;
+  list-style: none;
+}
+#rodape #container_logo {
+  display: flex;
+  align-items: center;
+}
+#rodape #container_logo #logo_footer {
+  font-size: 2em;
+}
+#rodape a:link {
+  color: rgb(0, 162, 255);
+}
+#rodape a:active {
+  color: rgb(51, 239, 51);
+}
+#rodape a:visited {
+  color: green;
+}
+#rodape a:hover {
+  color: rgb(95, 95, 238);
 }
 
-#rodape > ol {
-  align-items: center;
-  list-style: none;
-  display: flex;
-  gap: 20px;
+#container_1 {
+  grid-area: "logo";
+  border-left: 1px solid gray;
+  padding-left: 2em;
+}
+
+#container_2 {
+  grid-area: "cont1";
+  border-left: 1px solid gray;
+  padding-left: 2em;
+}
+
+#container_3 {
+  grid-area: "cont2";
+  border-left: 1px solid gray;
+  padding-left: 2em;
+}
+
+#container_4 {
+  grid-area: "cont3";
+  border-left: 1px solid gray;
+  padding-left: 2em;
 }
 
 .invalid {
@@ -233,6 +300,7 @@ main .info .info-conteudo .texto {
   padding: 0;
   margin: 0;
   box-sizing: box-sizing;
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
 }
 
 body {

@@ -1,19 +1,64 @@
-
 #rodape {
-    display: flex;
-    background-color: rgb(30, 29, 29);
+    background-color: rgb(25, 23, 23);
     color: white;
-    padding: 2em;
-    #footer-logo {
-        flex-grow: 1;
-        margin: fit-content;
-        font-size: 2.5em;
+    display: grid;
+    padding: 3% 5%;
+    justify-content: space-between;
+    grid-template-areas:
+    "logo cont1 cont2 cont3";
+    // social media =====================================================================
+    #social_media {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        .img {
+            width: 40px;
+            height: 40px;
+        }
+        .git {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    // LISTA DO FOOTER ===================================================================
+    .list_footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.56em;
+        list-style: none;
+    }
+    // LOGO DO FOOTER ===================================================================
+    #container_logo {
+        display: flex;
+        align-items: center;
+        #logo_footer {
+            font-size: 2em;
+        }
+    }
+    a {
+        &:link {
+            color: rgb(0, 162, 255);
+        }
+        &:active {
+            color: rgb(51, 239, 51);
+        }
+        &:visited {
+            color: green;
+        }
+        &:hover {
+            color: rgb(95, 95, 238);
+        }
     }
 }
-#rodape > ol {
-    align-items: center;
-    list-style: none;
-    display: flex;
-    gap: 20px;
+
+$area: "logo", "cont1", "cont2", "cont3";
+
+@for $cont from 1 through length($area) {
+    #container_#{$cont}{
+        grid-area: nth($area, $cont);
+        border-left: 1px solid gray;
+        padding-left: 2em;
+    }
 }
+
 
