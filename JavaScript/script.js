@@ -7,6 +7,7 @@ const input = document.querySelectorAll('.input');
 const button = document.querySelector('#button');
 const form = document.querySelector('#form');
 
+//there are a possible way of abstract this code
 
 input.forEach(function(element){
     element.addEventListener('input', function(){
