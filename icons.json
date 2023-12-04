@@ -1,18 +1,4 @@
 {
-  "background_color": "#ffffff",
-  "description": "Formulário simples com um design moderno",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "Teste PWA",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "PWA",
-  "start_url": "/",
-  "theme_color": "#23ff00",
-  "categories": [
-    "utilities"
-  ],
-  "screenshots": [],
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
@@ -462,13 +448,5 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
-  "shortcuts": [
-    {
-      "name": "form",
-      "url": "",
-      "description": ""
-    }
-  ],
-  "lang": "pt"
+  ]
 }

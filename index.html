@@ -146,4 +146,10 @@
     <script src="JavaScript/script.js"></script>
     <script src="JavaScript/sidebar.js"></script>
 </body>
+<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+</script>
+<script src="pwabuilder-sw.js"></script>
 </html>
