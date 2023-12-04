@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "description": "Formulário simples com um design moderno",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "zafkiel45.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "zafkiel45.github",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": []
+}
