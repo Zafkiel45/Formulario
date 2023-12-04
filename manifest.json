@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "PWA",
-  "start_url": "https://zafkiel45.github.io/Formulario/",
+  "start_url": "https://formulario-dk8y0jpbz-zafkiel45.vercel.app",
   "theme_color": "#23ff00",
   "categories": [
     "utilities"
