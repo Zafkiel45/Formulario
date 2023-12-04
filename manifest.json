@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "PWA",
-  "start_url": "/",
+  "start_url": "Formulario/",
   "theme_color": "#23ff00",
   "categories": [
     "utilities"
